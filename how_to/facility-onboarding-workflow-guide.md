@@ -2,20 +2,20 @@
 
 ## Use Case: 3rd party platforms
 
-A common use case for retrieving OS IDs involves platforms that use OS IDs as unique identifiers to facilitate data exchange and collaboration with third parties.
+A common use case for retrieving OS IDs involves platforms that use OS IDs as unique identifiers to facilitate onboarding of new users (suppliers, facilities, sites), data exchange and collaboration with third parties.
 
-This is particularly relevant for large data holders with frequently changing databases, such as Multi-Stakeholder Initiatives (MSIs), Civil Society Organizations (CSOs), and major brands/retailers. These organizations onboard new facilities regularly and require a standardized, reliable way to track and match facility data.
+This is particularly relevant for large data holders with frequently changing databases, such as Auditors and Service providers, Multi-Stakeholder Initiatives (MSIs), Civil Society Organizations (CSOs), and major brands/retailers. These organizations onboard new facilities regularly and require a standardized, reliable way to track and match facility data.
 
 - **Example 1:** [amfori sustainability platform](https://www.amfori.org/uploads/2025/06/Open-Supply-Hub-on-amfori-Sustainability-Platform-Guidance-for-Business-Partners.pdf)
 - **Example 2:** [Worldly/Higg platform](https://support.worldly.io/hc/en-us/articles/19418657651611-Account-Registration#h_01JMGGSADC12JWGH86YCJPJ40Q)
 
 ## How OS IDs Are Used
 
-When onboarding a new supplier or facility, they are required to provide an OS ID to ensure accurate identification and data consistency across platforms.
+When onboarding a new supplier or facility, they are required to provide an OS ID to ensure accurate identification and data consistency across platforms. If the facility is already listed on OS Hub, and OS ID would already exist. If it is not yet listed, a new OS ID will have to be created.
 
 ### Finding an Existing OS ID
 
-The supplier can search by facility name and address to find their OS ID directly on OS Hub or through an API integration with the platform they are using.
+To find an existing OS ID, the supplier can search their facility name and address directly on the OS Hub website or through an API integration with the platform they are using.
 
 ### Creating a New OS ID (If No Match Exists)
 
