@@ -49,3 +49,6 @@ Based on analysis of OS ID merges:
 
 * If you are on a plan with a limited number of API calls, **this endpoint should not use up many of your allocated calls**. For example, **a single call** can retrieve **all moderation events from the past 1 to 3 weeks**, depending on the time frame you specify.
 * **Daily queries** will not impact performance and ensure you have the most current data.
+
+
+<img width="2935" height="1110" alt="Moderation Events" src="https://github.com/user-attachments/assets/b6362a41-8e9b-4372-85ba-2237359e7e0e" />
