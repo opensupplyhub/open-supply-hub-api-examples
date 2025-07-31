@@ -32,7 +32,7 @@ Each record includes:
     "merge_date": "2023-08-01T11:45:53.306978Z"
   }
 ]
-
+````
 
 ## In practice:
 
