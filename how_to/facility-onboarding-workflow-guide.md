@@ -1,13 +1,13 @@
 # Building a facility onboarding workfow - OS ID retrieval
 
-## Use Case: 3rd party platforms Like amfori & ZDHC
+## Use Case: 3rd party platforms
 
 A common use case for retrieving OS IDs involves platforms that use OS IDs as unique identifiers to facilitate data exchange and collaboration with third parties.
 
 This is particularly relevant for large data holders with frequently changing databases, such as Multi-Stakeholder Initiatives (MSIs), Civil Society Organizations (CSOs), and major brands/retailers. These organizations onboard new facilities regularly and require a standardized, reliable way to track and match facility data.
 
-- **Example amfori use case diagram:** [amfory sustainability platform](https://www.amfori.org/uploads/2025/06/Open-Supply-Hub-on-amfori-Sustainability-Platform-Guidance-for-Business-Partners.pdf)
-- **Example Worldly/Higg platform:** [Account Registration](https://support.worldly.io/hc/en-us/articles/19418657651611-Account-Registration#h_01JMGGSADC12JWGH86YCJPJ40Q)
+- **Example 1:** [amfori sustainability platform](https://www.amfori.org/uploads/2025/06/Open-Supply-Hub-on-amfori-Sustainability-Platform-Guidance-for-Business-Partners.pdf)
+- **Example 2:** [Worldly/Higg platform](https://support.worldly.io/hc/en-us/articles/19418657651611-Account-Registration#h_01JMGGSADC12JWGH86YCJPJ40Q)
 
 ## How OS IDs Are Used
 
@@ -15,13 +15,13 @@ When onboarding a new supplier or facility, they are required to provide an OS I
 
 ### Finding an Existing OS ID
 
-The supplier can search for their OS ID directly on OS Hub or through an API integration with the platform they are using.
+The supplier can search by facility name and address to find their OS ID directly on OS Hub or through an API integration with the platform they are using.
 
 ### Creating a New OS ID (If No Match Exists)
 
 If the facility is not yet listed in OS Hub, the supplier can generate a new OS ID either:
 
-- Via the SLC form on the OS Hub website
+- Via the [Production Location Search form](https://opensupplyhub.org/contribute/single-location?tab=name-address) on the OS Hub website
 - Via API integration with the third-party party platform
 
 ### Using OS IDs for Data Exchange
