@@ -1,4 +1,4 @@
-# Building facility onboarding workfow - OS ID retrieval
+# Building a facility onboarding workfow - OS ID retrieval
 
 ## Use Case: 3rd party platforms Like amfori & ZDHC
 
