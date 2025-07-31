@@ -80,7 +80,7 @@ If a new location was created, use `GET api/moderation-events/{moderation-id}/` 
 
 ## Workflow Diagram
 
-![Retrieving OS IDs Workflow](Retrieving%20OS%20IDs.png)
+<img width="5992" height="1827" alt="Retrieving OS IDs" src="https://github.com/user-attachments/assets/bed33939-8264-40d3-aad5-8c8b6d843517" />
 
 ---
 
