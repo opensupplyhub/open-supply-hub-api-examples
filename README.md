@@ -6,7 +6,7 @@
 
 1. **Get your API key** → [Subscribe for access. You will receive instructions to obtain your token within 2 business days](https://info.opensupplyhub.org/api)
 2. **Make your first call** → See our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation)
-3. **Test with Postman** → Import our [collection](TBD)
+3. **Test with Postman** → Import our [collection](TBD) (WIP)
 
 ## 📚 Documentation
 
@@ -47,6 +47,7 @@ This documentation is available under the [MIT License](LICENSE).
 ---
 
 **Need help?** Check our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation) or [contact support](mailto:support@opensupplyhub.org).
+
 
 
 
