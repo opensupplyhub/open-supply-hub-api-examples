@@ -1,6 +1,6 @@
-# Building a facility onboarding workfow - OS ID retrieval
+# Building a facility onboarding workfow (OS ID retrieval)
 
-## Use Case: 3rd party platforms
+## Use Case: Sustanability platforms and service providers
 
 A common use case for retrieving OS IDs involves platforms that use OS IDs as unique identifiers to facilitate onboarding of new users (suppliers, facilities, sites), data exchange and collaboration with third parties.
 
@@ -26,11 +26,11 @@ If the facility is not yet listed in OS Hub, the supplier can generate a new OS 
 
 ### Using OS IDs for Data Exchange
 
-Many third-party platforms require suppliers to provide their OS ID to retrieve relevant facility data.
+Many third-party platforms require suppliers to provide their OS ID to retrieve relevant facility data from 3rd party sources.
 
 For example, amfori uses OS IDs to retrieve high-level aggregated results from the ZDHC Gateway within the amfori Sustainability Platform (see [case study](https://info.opensupplyhub.org/resources/amfori-case-study)).
 
-## Recommended Workflow for Retrieving OS IDs (New API)
+## Recommended Workflow for Retrieving OS IDs [New API endpoints](https://opensupplyhub.github.io/open-supply-hub-api-docs/) 
 
 ### Background on Single Location Contribution (SLC)
 
