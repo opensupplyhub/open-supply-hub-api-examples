@@ -1,6 +1,6 @@
 # OS Hub API Documentation
 
-**Welcome to the OS Hub API developer resources.** This repository contains everything you need to integrate with the OS Hub API, including comprehensive documentation, code examples, and testing tools.
+**Welcome to the OS Hub API developer resources.** This repository contains everything you need to integrate with the OS Hub API, including comprehensive documentation, examples, and testing tools.
 
 ## 🚀 Quick Start
 
@@ -18,30 +18,28 @@ Get up and running with the OS Hub API in under 5 minutes:
 | [Authentication](docs/authentication.md) | API keys, tokens, and security |
 | [API Endpoints](https://opensupplyhub.org/api/docs/) | Complete endpoint reference |
 | [API Endpoints (NEW - Beta)](https://opensupplyhub.github.io/open-supply-hub-api-docs/) | Complete endpoint reference |
-| [Code Examples](TBD) | Ready-to-use code in multiple languages |
+| [How to Guides](https://github.com/opensupplyhub/open-supply-hub-api-examples/tree/main/how_to) | Recommended API workflows for most common use cases |
 
 ## 🛠️ Developer Tools
 
 - **[Postman Collection](postman/)** - Import and test all endpoints
-- **[Python Examples](code-examples/python/)** - Complete Python integration examples  
-- **[JavaScript Examples](code-examples/javascript/)** - Frontend and Node.js examples
-- **[cURL Examples](code-examples/curl/)** - Command-line testing
 
 ## 🌟 What You Can Build
 
 The OS Hub API enables you to:
-- **Search facilities** by location, industry, or other criteria
-- **Access supply chain data** for transparency and compliance
-- **Integrate facility information** into your applications
+- **Search production locations** by OS ID, company name, sector, or other criteria
+- **Allocate a unique identifier (OS ID)** for each production site
+- **Identify incorrect names and addresses** in your supplier records
+- **Integrate facility information** into your applications (e.g. sector, product type, processing type, etc.)
 - **Build compliance tools** for due diligence requirements
 
-## 🤝 Contributing
+## 🤝 Get in Touch
 
-Found an issue or have a suggestion? We welcome contributions!
+Have questions or want to learn more?
 
-- **Report bugs** → [Open an issue](../../issues)
-- **Request features** → [Start a discussion](../../discussions)
-- **Improve docs** → Submit a pull request
+- **Report bugs, request features, ask technical questions, etc.** → [Contact Support](https://info.opensupplyhub.org/contact-us)
+- **Want to sign up for a subscription** → [Talk to our Sales Team](https://share.hsforms.com/1eLsrTVNORKS2m0Wk1gWzlQbujql)
+- **Apply for free API access** → Registered non-profits automatically get 50% off all Open Supply Hub Premium features. You can also apply for free or further discounted access. Learn more in our [Free/Discounted Access to Premium Features Policy](https://info.opensupplyhub.org/governance-policies).
 
 ## 📄 License
 
@@ -49,4 +47,5 @@ This documentation is available under the [MIT License](LICENSE).
 
 ---
 
-**Need help?** Check our [Getting Started Guide](docs/getting-started.md) or [contact support](mailto:support@opensupplyhub.org).
+**Need help?** Check our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation) or [contact support](mailto:support@opensupplyhub.org).
+
