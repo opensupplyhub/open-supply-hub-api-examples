@@ -6,7 +6,7 @@ This process is typically used by **researchers or civil society organizations w
 
 By following the steps below, researchers can systematically retrieve contributor data, their submitted lists, and the corresponding facilities.
 
-## Customer Facing Instructions
+## Instructions
 
 ### Step 1: Retrieve All Active Contributors
 
