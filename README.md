@@ -19,6 +19,7 @@ Get up and running with the OS Hub API in under 5 minutes:
 | [API Endpoints](https://opensupplyhub.org/api/docs/) | Complete endpoint reference |
 | [API Endpoints (NEW - Beta)](https://opensupplyhub.github.io/open-supply-hub-api-docs/) | Complete endpoint reference |
 | [How to Guides](https://github.com/opensupplyhub/open-supply-hub-api-examples/tree/main/how_to) | Recommended workflows for most common use cases |
+| [Terms of Service](https://info.opensupplyhub.org/resources/api-terms-of-service) | API subscription T&Cs |
 
 ## 🛠️ Developer Tools
 
@@ -48,6 +49,7 @@ This documentation is available under the [MIT License](LICENSE).
 ---
 
 **Need help?** Check our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation) or [contact support](mailto:support@opensupplyhub.org).
+
 
 
 
