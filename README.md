@@ -6,7 +6,7 @@
 
 Get up and running with the OS Hub API in under 5 minutes:
 
-1. **Get your API key** → [Sign up for access](https://info.opensupplyhub.org/api)
+1. **Get your API key** → [Subscribe for access. You will receive instructions to obtain your token within 2 business days](https://info.opensupplyhub.org/api)
 2. **Make your first call** → See our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation)
 3. **Test with Postman** → Import our [collection](TBD)
 
@@ -48,5 +48,6 @@ This documentation is available under the [MIT License](LICENSE).
 ---
 
 **Need help?** Check our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation) or [contact support](mailto:support@opensupplyhub.org).
+
 
 
