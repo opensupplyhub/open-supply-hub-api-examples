@@ -14,11 +14,11 @@ Get up and running with the OS Hub API in under 5 minutes:
 
 | Resource | Description |
 |----------|-------------|
-| [Getting Started](https://info.opensupplyhub.org/resources/api-documentation) | Your first API call and basic setup |
-| [Authentication](docs/authentication.md) | API keys, tokens, and security |
+| [Getting Started](https://info.opensupplyhub.org/resources/api-documentation) | Getting connected, API token and description of most common endpoints |
+| [Postman Tutorial](https://info.opensupplyhub.org/resources/how-to-use-os-hub-api) | Step-by-step guide for connecting ti the API using Postman |
 | [API Endpoints](https://opensupplyhub.org/api/docs/) | Complete endpoint reference |
 | [API Endpoints (NEW - Beta)](https://opensupplyhub.github.io/open-supply-hub-api-docs/) | Complete endpoint reference |
-| [How to Guides](https://github.com/opensupplyhub/open-supply-hub-api-examples/tree/main/how_to) | Recommended API workflows for most common use cases |
+| [How to Guides](https://github.com/opensupplyhub/open-supply-hub-api-examples/tree/main/how_to) | Recommended workflows for most common use cases |
 
 ## 🛠️ Developer Tools
 
@@ -38,7 +38,7 @@ The OS Hub API enables you to:
 Have questions or want to learn more?
 
 - **Report bugs, request features, ask technical questions, etc.** → [Contact Support](https://info.opensupplyhub.org/contact-us)
-- **Want to sign up for a subscription** → [Talk to our Sales Team](https://share.hsforms.com/1eLsrTVNORKS2m0Wk1gWzlQbujql)
+- **Want to sign up for a subscription?** → [Talk to our Sales Team](https://share.hsforms.com/1eLsrTVNORKS2m0Wk1gWzlQbujql)
 - **Apply for free API access** → Registered non-profits automatically get 50% off all Open Supply Hub Premium features. You can also apply for free or further discounted access. Learn more in our [Free/Discounted Access to Premium Features Policy](https://info.opensupplyhub.org/governance-policies).
 
 ## 📄 License
@@ -48,4 +48,5 @@ This documentation is available under the [MIT License](LICENSE).
 ---
 
 **Need help?** Check our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation) or [contact support](mailto:support@opensupplyhub.org).
+
 
