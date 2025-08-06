@@ -30,6 +30,8 @@ Once you have the **Contributor ID**, use the `GET /api/contributor-lists-sorted
 
 This will return all active **lists** associated with that contributor, along with their **List IDs**.
 
+NOTE: this step is optional and it's necessary only if you want to see the data organized by list. Otherwise, you can go to Step 3.
+
 **Sample response (Contributor ID = 310):**
 ```json
 [
@@ -48,9 +50,11 @@ This will return all active **lists** associated with that contributor, along wi
 ]
 ```
 
-### Step 3: Retrieve Facilities Associated with Each List
+### Step 3: Retrieve Facilities Associated with Each List or with Each Contributor
 
 To get all facilities contributed under a specific list, use `GET /api/facilities/` and filter by the **List ID** obtained in Step 2 (`lists` parameter).
+
+To get all facilities contributed by a specific contributor, use `GET /api/facilities/` and filter by the **Contributor ID** obtained in Step 2 (`contributors` parameter).
 
 **Sample response (List ID = 4434):**
 ```json
