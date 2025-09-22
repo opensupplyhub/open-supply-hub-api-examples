@@ -48,16 +48,14 @@ If you set the `page` parameter higher than 100, the request will return an erro
 > ⚠️ **Known Issue**: This endpoint accepts GPS coordinates but does not process them. It automatically performs geocoding based on the provided address, ignoring any coordinates in the request.
 
 **Workaround:**
-- Use **list upload** method instead
-- Include latitude (`lat`) and longitude (`lng`) values in the table columns
-- The system will skip geocoding and save your provided coordinates directly
+- Upload data using an Excel spreadsheet. [Reach out to our team](https://info.opensupplyhub.org/contact-us) for a custom template to include GPS coordinates in your upload.
 
-### New Endpoint: `POST /api/v1/production-locations/`
+### New Endpoint: `POST /api/v1/production-locations/` (Future solution, still in Beta)
 
 ✅ **Recommended**: This endpoint correctly accepts and processes GPS coordinates.
 
 - Once the moderation event for the new location is approved, coordinates will appear on the location profile page
-- For immediate GPS coordinate uploads, use the list upload method or switch to this new endpoint
+- For immediate GPS coordinate uploads, use the list upload method or switch to this new endpoint once available outside of beta
 
 ---
 
