@@ -30,7 +30,7 @@ The facilities endpoint returns a maximum number of facilities per page based on
 
 - Use the `page` and `pageSize` parameters to navigate through large datasets efficiently
 - **Maximum page limit: 100 pages**
-- For datasets requiring more than 100 pages consider using a [data download](#https://info.opensupplyhub.org/premium-data-downloads-analysis) instead.
+- For datasets requiring more than 100 pages consider using a [data download](https://info.opensupplyhub.org/premium-data-downloads-analysis) instead.
 
 > ⚠️ **Important**: The page limit of 100 is enforced to ensure system stability and prevent excessive load on the OS Hub platform.
 
