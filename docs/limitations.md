@@ -14,6 +14,13 @@ API user accounts have default settings limiting the number of calls allowed per
 
 ## Endpoints
 
+### `GET /v1/production-locations`
+
+#### Response Limits: 
+| Parameter | Facilities Per Page | Use Case |
+|-----------|-------------------|----------|
+| Default (no parameters) | 250 | Standard requests |
+
 ### `GET /api/facilities/`
 
 The facilities endpoint returns a maximum number of facilities per page based on the `detail` parameter.
