@@ -17,9 +17,9 @@ API user accounts have default settings limiting the number of calls allowed per
 ### `GET /v1/production-locations`
 
 #### Response Limits: 
-| Parameter | Facilities Per Page | Use Case |
-|-----------|-------------------|----------|
-| Default (no parameters) | 250 | Standard requests |
+| Facilities Per Page | Use Case |
+|-------------------|----------|
+| 250 | Standard requests |
 
 ### `GET /api/facilities/`
 
