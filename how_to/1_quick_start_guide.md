@@ -123,32 +123,19 @@ GET /api/v1/production-locations/?os_id=IN2021079TDH72D
 Now that you've made your first request, explore more capabilities:
 
 ### 📚 Learn More
-- [API Reference](./API_REFERENCE.md) - Complete endpoint documentation
-- [Authentication Guide](./AUTHENTICATION.md) - Security best practices
-- [Rate Limits](./RATE_LIMITS.md) - Understand request limits
-- [Error Handling](./ERROR_HANDLING.md) - Handle common errors
+- [API Endpoints](https://opensupplyhub.org/api/docs/) - Complete endpoint reference
+- [API Endpoints (NEW - Beta)](https://opensupplyhub.org/api/docs/) - Complete endpoint reference
+- [Limitations](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/docs/limitations.md) - Understand request limits
 
 ### 🎯 Common Use Cases
-- [Searching Facilities](./guides/SEARCHING_FACILITIES.md)
-- [Facility Matching](./guides/FACILITY_MATCHING.md)
-- [Batch Processing](./guides/BATCH_PROCESSING.md)
-- [Data Upload](./guides/DATA_UPLOAD.md)
-
-### 🛠️ Tools & SDKs
-- [Postman Collection](./tools/postman-collection.json)
-- [Python SDK](./sdks/python/)
-- [JavaScript SDK](./sdks/javascript/)
+- [Searching facilities](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/2_fuzzy_search_guide.md)
+- [Searching for facilities historical contribution data ](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/3_detail_search_guide.md)
+- [Searching facilities by contributor](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/4_contributor-search-guide.md)
+- [Upload Data](TBA)
 
 ---
 
-## Need Help?
+## 🤝 Get in Touch
 
-**Resources:**
-- **Documentation:** [Full API Documentation](./README.md)
-- **Support:** [Contact OS Hub Support](https://opensupplyhub.org/support)
-- **Community:** [OS Hub Developer Forum](https://forum.opensupplyhub.org)
-- **Status:** [API Status Page](https://status.opensupplyhub.org)
-
-**Common Issues:**
-- [Troubleshooting Guide](./TROUBLESHOOTING.md)
-- [FAQ](./FAQ.md)
+- **Want to sign up for a subscription?** → [Talk to our Sales Team](https://share.hsforms.com/1eLsrTVNORKS2m0Wk1gWzlQbujql)
+- **Apply for free API access** → Registered non-profits automatically get 50% off all Open Supply Hub Premium features. You can also apply for free or further discounted access. Learn more in our [Free/Discounted Access to Premium Features Policy](https://info.opensupplyhub.org/governance-policies).
