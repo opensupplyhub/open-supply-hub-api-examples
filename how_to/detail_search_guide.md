@@ -1,4 +1,4 @@
-# FSearching for Facilities on Open Supply Hub using the /facilities/ endpoint
+# Searching for Facilities on Open Supply Hub using the /facilities/ endpoint
 
 Search for facilities in the OS Hub database using various filters and criteria.
 
