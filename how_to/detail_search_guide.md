@@ -8,7 +8,7 @@
 - ✅ **Parent company filtering** - Search by parent company ownership
 - ✅ **Detailed attribution** - See complete contributor information and data provenance
 
-> **📌 Looking for fuzzy search?** The `/api/facilities/` endpoint uses exact matching. For fuzzy search with typo tolerance, geographic search, or address-based search, use the [v1/production-locations/ endpoint](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/fuzzy_search_guide.md) instead. Note that this endpoint does not support extended details or contributor-based filtering.
+> **📌 Looking for fuzzy search?** The `/api/facilities/` endpoint has limited fuzzy search support. For fuzzy search with typo tolerance, geographic search, or address-based search, use the [v1/production-locations/ endpoint](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/fuzzy_search_guide.md) instead. Note that this endpoint does not support extended details or contributor-based filtering.
 
 ---
 
