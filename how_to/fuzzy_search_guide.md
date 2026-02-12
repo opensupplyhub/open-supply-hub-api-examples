@@ -336,8 +336,3 @@ If you encounter issues or have questions:
 2. Review examples above
 3. [Contact support](support@opensupplyhub.org)
 
----
-
-## Contributing
-
-We welcome contributions! If you find issues or have suggestions for improving this documentation, please open an issue or submit a pull request.
