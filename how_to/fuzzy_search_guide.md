@@ -1,6 +1,6 @@
 # Searching for Facilities on Open Supply Hub
 
-The new /api/v1/production-locations/ endpoint provides intelligent search capabilities that help you find production locations even with incomplete information, typos, or partial addresses—similar to how Google search works.
+The `GET /api/v1/production-locations/` endpoint provides intelligent search capabilities that help you find production locations even with incomplete information, typos, or partial addresses—similar to how Google search works.
 
 ## Quick Start
 
