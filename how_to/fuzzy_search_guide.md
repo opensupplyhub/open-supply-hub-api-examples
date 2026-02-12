@@ -27,8 +27,6 @@ GET /api/v1/production-locations/?name=steinway+sons
 
 **Best for:** When you know the company or facility name
 
-[Try it →](https://opensupplyhub.org/api/v1/production-locations/?name=steinway+sons)
-
 ### By Address
 
 Search specifically in the address field:
@@ -38,8 +36,6 @@ GET /api/v1/production-locations/?address=astoria
 ```
 
 **Best for:** When you have city, state, or street information
-
-[Try it →](https://opensupplyhub.org/api/v1/production-locations/?address=astoria)
 
 ### Combined Name + Address
 
@@ -51,8 +47,6 @@ GET /api/v1/production-locations/?name=steinway&address=astoria
 
 **Best for:** Maximum precision when you have both name and location
 
-[Try it →](https://opensupplyhub.org/api/v1/production-locations/?name=steinway&address=astoria)
-
 ### General Query
 
 Search across multiple fields (name, address, description, local name):
@@ -63,19 +57,15 @@ GET /api/v1/production-locations/?query=steinway+piano
 
 **Best for:** Exploratory searches when you're not sure which field contains your information
 
-[Try it →](https://opensupplyhub.org/api/v1/production-locations/?query=steinway+piano)
-
 ### Geographic Search
 
 Find facilities within a radius of coordinates:
 
 ```
-GET /api/v1/production-locations/?coordinates[lat]=40.7726&coordinates[lng]=-73.9076&distance=2km
+GET /api/v1/production-locations/?coordinates[lat]=13.0454318&coordinates[lng]=77.5218658&distance=2km
 ```
 
 **Best for:** Location-based discovery
-
-[Try it →](https://opensupplyhub.org/api/v1/production-locations/?coordinates[lat]=40.7726&coordinates[lng]=-73.9076&distance=2km)
 
 ---
 
@@ -89,16 +79,16 @@ GET /api/v1/production-locations/?coordinates[lat]=40.7726&coordinates[lng]=-73.
 | `name` | Facility name only | `?name=steinway` |
 | `address` | Address only | `?address=new+york` |
 | `description` | Description field only | `?description=apparel` |
-| `local_name` | Local language name | `?local_name=工厂` |
+| `local_name` | Local language name | `?local_name=温岭市名仕帽业有限公司` |
 
-### Filters (Exact Match)
+### Filters (Exact Match Only)
 
 | Parameter | Description | Example |
 |-----------|-------------|---------|
 | `country` | Two-letter country code | `?country=US` |
-| `sector` | Industry sector | `?sector=Apparel` |
-| `product_type` | Product type filter | `?product_type=shirts` |
-| `processing_type` | Processing type | `?processing_type=dyeing` |
+| `sector` | [Industry sector](https://docs.google.com/document/d/12gDb4WlMHwaAE0iYVmbOjNJ_T7ICqntp-Ddd1qfbhCg/edit?tab=t.0#heading=h.tnf5hn3volep) | `?sector=Apparel` |
+| `product_type` | [Product type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) | `?product_type=shirts` |
+| `processing_type` | [Processing type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) | `?processing_type=dyeing` |
 | `os_id` | Exact OS ID match | `?os_id=US2025026H5N0X1` |
 
 ### Geographic Search
@@ -108,6 +98,10 @@ GET /api/v1/production-locations/?coordinates[lat]=40.7726&coordinates[lng]=-73.
 | `coordinates[lat]` | float | Latitude |
 | `coordinates[lng]` | float | Longitude |
 | `distance` | string | Radius (e.g., `50km`, `10mi`) |
+| `geo_bounding_box[top]` | float | Bounding box top latitude |
+| `geo_bounding_box[left]` | float | Bounding box left longitude |
+| `geo_bounding_box[bottom]` | float | Bounding box bottom latitude |
+| `geo_bounding_box[right]` | float | Bounding box right longitude |
 
 ### Range Filters
 
@@ -117,6 +111,8 @@ GET /api/v1/production-locations/?coordinates[lat]=40.7726&coordinates[lng]=-73.
 | `number_of_workers[max]` | integer | Maximum worker count |
 | `percent_female_workers[min]` | float | Minimum percentage |
 | `percent_female_workers[max]` | float | Maximum percentage |
+| `claimed_at_gt` | date | Claimed after this date |
+| `claimed_at_lt` | date | Claimed before this date |
 
 ### Pagination
 
@@ -248,36 +244,6 @@ address=astria (typo) → Still finds Astoria ✓
 ?name=textile&country=BD&sector=Apparel
 ```
 
----
-
-## Response Format
-
-### Typical Response Structure
-
-```json
-{
-  "count": 5,
-  "next": null,
-  "previous": null,
-  "results": [
-    {
-      "os_id": "US2025026H5N0X1",
-      "name": "Steinway & Sons - New York Factory",
-      "address": "1 Steinway Place, Astoria, NY 11105, USA",
-      "country_code": "US",
-      "location": {
-        "lat": 40.7726,
-        "lng": -73.9076
-      },
-      "sector": ["Manufacturing"],
-      "number_of_workers": 350,
-      "created_at": "2024-01-15T10:30:00Z"
-    }
-  ]
-}
-```
-
----
 
 ## Advanced Features
 
@@ -332,14 +298,6 @@ For complex geographic queries, use the web interface or API to define custom sh
 
 ---
 
-## Performance
-
-- **Response Time:** Sub-second, typically under 200ms
-- **Accent Handling:** Automatic normalization (e.g., "São Paulo" matches "sao paulo")
-- **Search Engine:** Powered by OpenSearch with custom analyzers
-
----
-
 ## Common Questions
 
 **Q: How accurate is the fuzzy search?**  
@@ -367,7 +325,7 @@ Please refer to the main API documentation for current rate limit information.
 
 ## Full API Documentation
 
-For complete API reference including authentication, rate limits, and all endpoints:
+For complete API reference to all Beta endpoints:
 
 📚 **[Open Supply Hub API Documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/)**
 
@@ -377,9 +335,9 @@ For complete API reference including authentication, rate limits, and all endpoi
 
 If you encounter issues or have questions:
 
-1. Check the [full API documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/)
+1. Check the [full API documentation](https://github.com/opensupplyhub/open-supply-hub-api-examples)
 2. Review examples above
-3. Contact support through the Open Supply Hub platform
+3. [Contact support](support@opensupplyhub.org)
 
 ---
 
