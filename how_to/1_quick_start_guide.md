@@ -124,7 +124,7 @@ Now that you've made your first request, explore more capabilities:
 
 ### 📚 Learn More
 - [API Endpoints](https://opensupplyhub.org/api/docs/) - Complete endpoint reference
-- [API Endpoints (NEW - Beta)](https://opensupplyhub.org/api/docs/) - Complete endpoint reference
+- [API Endpoints (NEW - Beta)](https://opensupplyhub.github.io/open-supply-hub-api-docs/) - Complete endpoint reference
 - [Limitations](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/docs/limitations.md) - Understand request limits
 
 ### 🎯 Common Use Cases
