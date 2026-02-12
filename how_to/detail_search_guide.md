@@ -278,7 +278,6 @@ This shows:
 - Which contributors have submitted data
 - What specific fields each contributor provided
 - Extended fields and custom attributes
-- Complete data lineage
 
 ❌ **Avoid using `detail=true` for:**
 - Large-scale data collection (slower, fewer results per page)
