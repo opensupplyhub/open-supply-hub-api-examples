@@ -1,7 +1,5 @@
 # Searching for Facilities on Open Supply Hub using the /facilities/ endpoint
 
-Search for facilities in the OS Hub database using various filters and criteria.
-
 ## When to Use This Endpoint
 
 Use the **Facilities endpoint** (`/api/facilities/`) when you need:
