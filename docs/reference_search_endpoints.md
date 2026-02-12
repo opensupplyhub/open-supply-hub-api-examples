@@ -25,15 +25,16 @@
 
 ## 📊 Feature Comparison
 
-| Feature | Production Locations | Facilities |
+| Feature | v1/production-locations/ | /facilities/ |
 |---------|---------------------|-----------|
-| **Data Returned** | Promoted data (profile page) | All contributions & history |
-| **Fuzzy Search** | ✅ Advanced (typo tolerance) | Limited |
+| **Data Returned** | Promoted data (profile page) | Promoted data and historical contributions |
+| **Fuzzy Search** | ✅ | Limited |
+| **Address Search** | ✅ | ❌ |
 | **Geographic Search** | ✅ Radius & bounding box | ❌ |
-| **Contributor Filtering** | ❌ | ✅ By ID, type, parent company |
+| **Contributor Filtering** | ❌ | ✅ By Contributor ID |
+| **Parent Company Search** | ✅ | ❌ |
 | **Historical Data** | ❌ | ✅ Full contribution history |
-| **Response Speed** | Fast | Slower (especially with `detail=true`) |
-| **Best For** | Integrations, general searches | Analysis, attribution, networks |
+| **Claim Search** | ✅ Status and time range| ❌ |
 
 ---
 
