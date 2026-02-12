@@ -1,8 +1,6 @@
 # Searching for Facilities on Open Supply Hub using the /facilities/ endpoint
 
-## When to Use This Endpoint
-
-Use the **Facilities endpoint** (`/api/facilities/`) when you need:
+## Use the **Facilities endpoint** (`/api/facilities/`) when you need:
 
 - ✅ **View all contributions to a facility** - See extended details showing every data contribution made to a facility profile
 - ✅ **Search by contributor** - Filter facilities by specific contributor IDs or types
