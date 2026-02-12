@@ -2,17 +2,17 @@
 
 **Welcome to the OS Hub API developer resources.** This repository contains everything you need to integrate with the OS Hub API, including comprehensive documentation, examples, and testing tools.
 
-## 🚀 Quick Start
+## 🚀 Get Started
 
 1. **Get your API key** → [Subscribe for access. You will receive instructions to obtain your token within 2 business days](https://info.opensupplyhub.org/api)
-2. **Make your first call** → See our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation)
+2. **Make your first call** → See our [Quick Start Guide](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/1_quick_start_guide.md)
 3. **Test with Postman** → Import our [collection](TBD) (WIP)
 
 ## 📚 Documentation
 
 | Resource | Description |
 |----------|-------------|
-| [Getting Started](https://info.opensupplyhub.org/resources/api-documentation) | Getting connected, API token and description of most common endpoints |
+| [Quick Start Guide](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/1_quick_start_guide.md) | Getting connected, API token and description of most common endpoints |
 | [Postman Tutorial](https://info.opensupplyhub.org/resources/how-to-use-os-hub-api) | Step-by-step guide for connecting ti the API using Postman |
 | [API Endpoints](https://opensupplyhub.org/api/docs/) | Complete endpoint reference |
 | [API Endpoints (NEW - Beta)](https://opensupplyhub.github.io/open-supply-hub-api-docs/) | Complete endpoint reference |
@@ -47,6 +47,7 @@ This documentation is available under the [MIT License](LICENSE).
 ---
 
 **Need help?** Check our [Getting Started Guide](https://info.opensupplyhub.org/resources/api-documentation) or [contact support](mailto:support@opensupplyhub.org).
+
 
 
 
