@@ -312,14 +312,11 @@ Yes! Use radius search, bounding box, or custom polygon options for geographic q
 **Q: What happens if I paste a full address?**  
 The system automatically detects long queries and switches to phrase-based matching, which is optimized for addresses.
 
-**Q: How do I get more than the default number of results?**  
-Use the `size` parameter: `?name=textile&size=100`
-
 ---
 
 ## Rate Limits
 
-Please refer to the main API documentation for current rate limit information.
+Please refer to the main API documentation for current rate limit information [Link](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/docs/limitations.md).
 
 ---
 
