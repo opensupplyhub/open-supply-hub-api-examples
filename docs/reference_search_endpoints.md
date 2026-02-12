@@ -32,7 +32,7 @@
 | **Address Search** | ✅ | ❌ |
 | **Geographic Search** | ✅ Radius & bounding box | ❌ |
 | **Contributor Filtering** | ❌ | ✅ By Contributor ID |
-| **Parent Company Search** | ✅ | ❌ |
+| **Parent Company Search** | ❌ | ✅ |
 | **Historical Data** | ❌ | ✅ Full contribution history |
 | **Claim Search** | ✅ Status and time range| ❌ |
 
@@ -60,8 +60,8 @@ GET /api/facilities/?q=BD2021113R7R87P&detail=true
 
 ---
 
-### Example 3: Verify Your Contribution
-**Need:** Confirm your organization's data submissions.
+### Example 3: Find all suppliers for a brand
+**Need:** See all facilities that a specific brand sources from.
 
 ```http
 GET /api/facilities/?contributors=4302&detail=true
@@ -106,10 +106,6 @@ GET /api/facilities/?q=BD2021113R7R87P&detail=true
 
 ## 📚 Additional Resources
 
-- [Production Locations Search Guide](link-to-production-locations-guide)
-- [Facilities Search Guide](link-to-facilities-guide)
-- [Complete API Documentation](https://opensupplyhub.org/api/docs)
-
----
-
-**Last Updated:** February 2026 | **API Version:** v1
+- [Guide: Searching for Facilities on Open Supply Hub using the /v1/production-locations/ endpoint](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/2_fuzzy_search_guide.md)
+- [Guide: Searching for Facilities on Open Supply Hub using the /facilities/ endpoint](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/3_detail_search_guide.md))
+- [Guide: Searching by Contributor](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/4_contributor-search-guide.md)
