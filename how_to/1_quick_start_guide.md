@@ -131,7 +131,7 @@ Now that you've made your first request, explore more capabilities:
 - [Searching facilities](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/2_fuzzy_search_guide.md)
 - [Searching for facilities historical contribution data ](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/3_detail_search_guide.md)
 - [Searching facilities by contributor](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/4_contributor-search-guide.md)
-- [Upload Data](TBA)
+- [Uploading Data](TBA)
 
 ---
 
