@@ -40,9 +40,9 @@ All requests must be submitted in JSON format with the following structure:
 |-------|------|-------------|
 | `product_type` | String | Product type produced or processed at the facility. Can also be included in `sector_product_type` |
 | `sector` | String | Industry sector associated with the facility. Can also be included in `sector_product_type` |
-| `sector_product_type` | String | Combined field for product types and/or sectors. Values matching the [OS Hub sector list](https://opensupplyhub.org/sectors) appear as sectors; others appear as product types |
-| `facility_type` | String | Type of facility (e.g., "Final Product Assembly"). See [OS Hub taxonomy](https://info.opensupplyhub.org/resources/facilitate-types) |
-| `processing_type` | String | Processing activity type (e.g., "printing"). Matching types from the [OS Hub taxonomy](https://info.opensupplyhub.org/resources/processing-types) automatically add the associated facility type |
+| `sector_product_type` | String | Combined field for product types and/or sectors. Values matching the [OS Hub sector list](https://docs.google.com/document/d/12gDb4WlMHwaAE0iYVmbOjNJ_T7ICqntp-Ddd1qfbhCg/edit?tab=t.0#heading=h.tnf5hn3volep) appear as sectors; others appear as product types |
+| `facility_type` | String | Type of facility (e.g., "Final Product Assembly"). See [OS Hub taxonomy](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) |
+| `processing_type` | String | Processing activity type (e.g., "printing"). Matching types from the [OS Hub taxonomy](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0)) automatically add the associated facility type |
 | `facility_type_processing_type` | String | Combined field for facility type and processing type. Matching processing types automatically add associated facility types |
 | `parent_company` | String | Company with majority ownership of the facility |
 | `number_of_workers` | Integer or String | Number or range of workers (e.g., `"100"` or `"100-150"`) |
