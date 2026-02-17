@@ -31,7 +31,7 @@ All requests must be submitted in JSON format with the following structure:
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | String | Name of the facility |
-| `address` | String | Street address (excluding country) |
+| `address` | String | Street address (excluding country). Must include street number, street name, city and zip/postal code.|
 | `country` | String | Country where the facility is located |
 
 ### Optional Fields
