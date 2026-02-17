@@ -47,6 +47,10 @@ All requests must be submitted in JSON format with the following structure:
 | `parent_company` | String | Company with majority ownership of the facility |
 | `number_of_workers` | Integer or String | Number or range of workers (e.g., `"100"` or `"100-150"`) |
 
+## Examples
+
+To see example request body and response, visit the [API Endpoints Reference](https://opensupplyhub.org/api/docs/)
+
 ## Response
 
 The API returns details about the matched or created facility, including:
@@ -58,8 +62,8 @@ The API returns details about the matched or created facility, including:
 
 ## Best Practices
 
-1. **Use consistent naming**: Submit facility names consistently to improve match accuracy
-2. **Include complete addresses**: More detailed addresses improve matching confidence
-3. **Leverage optional fields**: Additional context helps with data quality
+1. **Use consistent naming**: Provide the complete legal name of the production location, include incorporation details (Pvt., Ltd., etc.)
+2. **Include complete addresses**: More detailed addresses improve matching confidence and geocoding accuracy
+3. **Leverage optional fields**: Additional context improves the overall data quality
 4. **Test matching behavior**: Use `create=false` to test matching without creating new facilities
-5. **Handle responses**: Check match confidence scores to understand how your data was processed
+5.  **Convert all text to English/Roman language**: to ensure the data is searchable, translate any non-roman characters to Roman / English equivalent
