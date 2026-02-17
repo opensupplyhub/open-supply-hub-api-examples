@@ -53,8 +53,6 @@ To see example request body and response, visit the [API Endpoints Reference](ht
 
 ## Response
 
-## Response
-
 The API processes your submission through OS Hub's matching algorithm and returns one of three possible outcomes:
 
 ### Automatic Match
