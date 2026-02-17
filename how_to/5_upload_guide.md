@@ -53,12 +53,44 @@ To see example request body and response, visit the [API Endpoints Reference](ht
 
 ## Response
 
-The API returns details about the matched or created facility, including:
+## Response
 
-- OS ID (unique facility identifier)
-- Match confidence score
-- Whether a new facility was created or an existing one was matched
+The API processes your submission through OS Hub's matching algorithm and returns one of three possible outcomes:
+
+### Automatic Match
+
+**Occurs when**: A single existing facility is found with >0.8 confidence score
+
+The system automatically adds your contribution to the existing facility record. The response includes:
+- OS ID of the matched facility
+- Match confidence score (>0.8)
 - Facility details as stored in OS Hub
+- Confirmation that data was added to existing record
+
+### Potential Match
+
+**Occurs when**: 
+- One or more existing facilities are found with 0.5-0.8 confidence, OR
+- Multiple existing facilities are found with >0.8 confidence
+
+The response includes:
+- List of potential matching facilities
+- Confidence scores for each potential match
+- `confirm_match_url` - URL to confirm a match
+- `reject_match_url` - URL to reject a match
+
+**Required action**: You must respond to the API using the provided URLs to either:
+- **Confirm a match**: POST to the `confirm_match_url` to add your data to the selected facility
+- **Reject all matches**: POST to the `reject_match_url` for each potential match. Once all are rejected, the system creates a new facility
+
+### New Facility
+
+**Occurs when**: No existing facilities are found with ≥0.5 confidence score
+
+The system creates a new facility record. The response includes:
+- Newly assigned OS ID
+- Complete facility details as submitted
+- Confirmation of new facility creation
 
 ## Best Practices
 
