@@ -20,7 +20,7 @@ POST https://opensupplyhub.org/api/facilities/
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `create` | Boolean | `true` | When set to `false`, prevents creation of a new facility if no match is found |
-| `public` | Boolean | `true` | When set to `false`, attributes the contribution to contributor type instead of contributor name. *Only available with certain API packages* |
+| `public` | Boolean | `true` | For anonymized contribution. When set to `false`, attributes the contribution to contributor type (e.g. "A Brand/Retailer", "A Civil Society Organization" instead of contributor name. *Only available with certain API packages* |
 
 ## Request Body
 
