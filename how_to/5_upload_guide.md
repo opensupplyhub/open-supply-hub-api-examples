@@ -15,14 +15,6 @@ The POST /facilities/ endpoint allows you to upload data to OS Hub. When you sub
 POST https://opensupplyhub.org/api/facilities/
 ```
 
-## Authentication
-
-Include your API token in the request header:
-
-```
-Authorization: Token YOUR_API_TOKEN
-```
-
 ## Query Parameters
 
 | Parameter | Type | Default | Description |
