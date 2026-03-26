@@ -14,8 +14,8 @@
 |----------|-------------|
 | [Quick Start Guide](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/1_quick_start_guide.md) | Getting connected, API token and description of most common endpoints |
 | [Postman Tutorial](https://info.opensupplyhub.org/resources/how-to-use-os-hub-api) | Step-by-step guide for connecting ti the API using Postman |
-| [API Endpoints](https://opensupplyhub.org/api/docs/) | Complete endpoint reference |
-| [API Endpoints (NEW - Beta)](https://opensupplyhub.github.io/open-supply-hub-api-docs/) | Complete endpoint reference |
+| [Legacy API Endpoints](https://opensupplyhub.org/api/docs/) | Complete endpoint reference |
+| [NEW (Beta) API Endpoints](https://opensupplyhub.github.io/open-supply-hub-api-docs/) | Complete endpoint reference |
 | [How to Guides](https://github.com/opensupplyhub/open-supply-hub-api-examples/tree/main/how_to) | Recommended workflows for most common use cases |
 | [Terms of Service](https://info.opensupplyhub.org/resources/api-terms-of-service) | API subscription T&Cs |
 
