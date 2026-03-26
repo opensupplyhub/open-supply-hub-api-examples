@@ -45,6 +45,8 @@ GET /api/facilities/BD2019086FE689M
 
 The legacy endpoint returns a GeoJSON `Feature` object. Partner data is nested inside `properties.partner_fields` as an array of contribution objects. Each object includes contributor metadata alongside the raw values.
 
+> **IMPORTANT:** The following response example illustrate what a fully populated production location may look like when data has been contributed by multiple partners. In practice, most production locations will only contain a subset of these fields, depending on whether partner data exists for that specific location. As a result, API responses will vary and should not be expected to include data from every partner for every production location.
+
 ```json
 {
   "id": "BD2019086FE689M",
@@ -126,6 +128,8 @@ GET /api/v1/production-locations/BD2019086FE689M
 ### Response structure
 
 The new endpoint returns a flat JSON object. Partner data appears as top-level fields, with raw values directly accessible — no unwrapping of contribution arrays is needed.
+
+> **IMPORTANT:** The following response example illustrate what a fully populated production location may look like when data has been contributed by multiple partners. In practice, most production locations will only contain a subset of these fields, depending on whether partner data exists for that specific location. As a result, API responses will vary and should not be expected to include data from every partner for every production location.
 
 ```json
 {
