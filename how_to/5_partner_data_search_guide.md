@@ -179,3 +179,16 @@ The new endpoint returns a flat JSON object. Partner data appears as top-level f
   }
 }
 ```
+## Frequently Asked Questions
+
+**Will every production location have partner data?**
+
+No. Partner data is only present when a partner has contributed information for that specific location. Most production locations will only contain a subset of partner data fields, so responses will vary.
+
+**Can I retrieve partner data when searching across multiple production locations?**
+
+No. Partner data is only returned when retrieving a specific production location by OS ID. It is not included in list responses, such as filtered searches by country, sector, or other parameters.
+
+**How many API calls are needed to retrieve partner data for a production location?**
+
+One. Partner data is included in the same response as the core production location data, so a single call per OS ID is all that is required.
