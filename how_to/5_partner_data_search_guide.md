@@ -21,7 +21,6 @@ OS Hub provides two endpoints for retrieving a production location by OS ID:
 | | Legacy Endpoint | New Endpoint |
 |---|---|---|
 | **Path** | `GET /api/facilities/{id}` | `GET /api/v1/production-locations/{os_id}` |
-| **Response format** | GeoJSON Feature object | Flat JSON object |
 | **Partner data location** | Nested under `properties.partner_fields` | Top-level fields |
 | **Partner data structure** | Array of contribution objects with metadata (contributor name, verification status, timestamps) | Clean key-value pairs with raw values only |
 | **Best for** | Accessing contributor metadata and provenance | Straightforward data integration |
