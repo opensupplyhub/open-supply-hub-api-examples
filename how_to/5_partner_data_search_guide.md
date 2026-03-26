@@ -6,7 +6,7 @@ Open Supply Hub (OS Hub) integrates data from a growing network of partners, ena
 
 ## What is Partner Data?
 
-OS Hub's brings together data from specialist organisations to provide richer insight into production locations. When partner data exists for a facility, it is included automatically in API responses — no additional parameters are required.
+OS Hub's brings together data from 3rd party organisations to provide richer insight into production locations. When partner data exists for a facility, it is included automatically in API responses — no additional parameters are required.
 
 For more information about OS Hub's data partnerships, see the [OS Hub Data Integrations page →](https://info.opensupplyhub.org/data-integrations)
 
