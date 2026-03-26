@@ -98,9 +98,7 @@ The legacy endpoint returns a GeoJSON `Feature` object. Partner data is nested i
 }
 ```
 
-### Key fields in `partner_fields`
-
-Each entry in a `partner_fields` array contains:
+### Key metadata fields in `partner_fields`
 
 | Field | Description |
 |---|---|
