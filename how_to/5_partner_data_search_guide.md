@@ -1,12 +1,6 @@
 # Accessing Partner Data via the OS Hub API
 
-Open Supply Hub (OS Hub) integrates data from a growing network of partners, enabling you to retrieve environmental, social, and compliance data alongside core production location information. This guide explains what partner data is available, how it is structured, and how to retrieve it using either the legacy or new API endpoint.
-
----
-
-## What is Partner Data?
-
-OS Hub's brings together data from 3rd party organisations to provide richer insight into production locations. When partner data exists for a location, it is included automatically in API responses — no additional parameters are required.
+Open Supply Hub (OS Hub) integrates data from a growing network of third-party partners, enabling you to retrieve environmental, social, and compliance data alongside core production location information. When partner data exists for a location, it is included automatically in API responses — no additional parameters are required.
 
 For more information about OS Hub's data partnerships, see the [OS Hub Data Integrations page](https://info.opensupplyhub.org/data-integrations), which covers:
 
