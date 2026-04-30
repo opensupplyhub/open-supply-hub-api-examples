@@ -1,14 +1,14 @@
-# Accessing Partner Data via the OS Hub API
+# Accessing Spotlight Data via the OS Hub API
 
-Open Supply Hub (OS Hub) integrates data from a growing network of third-party partners, enabling you to retrieve environmental, social, and compliance data alongside core production location information. When partner data exists for a location, it is included automatically in API responses — no additional parameters are required.
+OS Hub Spotlight integrates data from a growing network of third-party partners, enabling you to retrieve environmental, social, and compliance data alongside core production location information. When Spotlight data exists for a location, it is included automatically in API responses — no additional parameters are required.
 
-For more information about OS Hub's data partnerships, see the [OS Hub Data Integrations page](https://info.opensupplyhub.org/data-integrations), which covers:
+For more information about OS Hub Spotlight, see the [OS Hub Spotlight Page](https://info.opensupplyhub.org/spotlight), which covers:
 
 - Active partners
 - Available data points with definitions and additional resources
 - How the data was sourced and how it can be used
 
-> **Note:** Most production locations will only contain a subset of these fields. Partner data is only present when a partner has contributed information for that specific location. Do not expect every field to be populated in every response.
+> **Note:** Most production locations will only contain a subset of these fields. Spotlight data is only present when a partner has contributed information for that specific location. Do not expect every field to be populated in every response.
 
 ---
 
