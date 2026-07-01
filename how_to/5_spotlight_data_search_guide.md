@@ -37,66 +37,118 @@ GET /api/facilities/{id}
 **Example:**
 
 ```
-GET /api/facilities/BD2019086FE689M
+GET /api/facilities/BD2020021QK28YZ
 ```
 
 ### Example response structure
 
-The legacy endpoint returns a GeoJSON `Feature` object. Partner data is nested inside `properties.partner_fields` as an array of contribution objects. Each object includes contributor metadata alongside the raw values.
+> **Note:** This is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.org/api/docs/).
 
-> **IMPORTANT:** The following response example illustrate what a fully populated production location may look like when data has been contributed by multiple partners. In practice, most production locations will only contain a subset of these fields, depending on whether partner data exists for that specific location. As a result, API responses will vary and should not be expected to include data from every partner for every production location.
 
 ```json
 {
-  "id": "BD2019086FE689M",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [90.304338, 23.9431596]
-  },
-  "properties": {
-    "name": "Debonair Limited",
-    "address": "Gorat, Sarker Market Road, Ashulia",
-    "country_code": "BD",
-    "os_id": "BD2019086FE689M",
-    "country_name": "Bangladesh",
-    "partner_fields": {
-      "wage_indicator": [
-        {
-          "id": null,
-          "is_verified": false,
-          "value": {
-            "raw_values": {
-              "living_wage_link_national": "https://mywage.org.bd/salary/living-wages",
-              "minimum_wage_link_english": "https://wageindicator.org/salary/minimum-wage/bangladesh/38276-bangladesh",
-              "minimum_wage_link_national": "https://mywage.org.bd/salary/minimum-wage/"
-            }
-          },
-          "updated_at": "2026-01-17T07:30:43.699192Z",
-          "contributor_name": "WageIndicator",
-          "contributor_id": 2868,
-          "value_count": 1,
-          "is_from_claim": false,
-          "field_name": "wage_indicator",
-          "verified_count": 0
-        }
-      ],
-      "climate_trace": [
-        {
-          "value": {
-            "raw_values": {
-              "estimated_emissions": 13,
-              "estimated_annual_activity": 22
-            }
-          },
-          "updated_at": "2026-03-01T09:15:00.000000Z",
-          "contributor_name": "Climate TRACE",
-          "contributor_id": 2950
-        }
-      ]
+    "country": {
+        "alpha_3": "BGD",
+        "alpha_2": "BD",
+        "name": "Bangladesh",
+        "numeric": "050"
+    },
+    "parent_company": "Dekkoisho Group",
+    "address": "Mawna, Sreepur, Gazipur-1740",
+    "claim_status": "claimed",
+    "certifications_standards_regulations": [
+        "BCI",
+        "FSC",
+        "GOTS",
+        "Global Recycling Standard (GRS)",
+        "Higg Index",
+        "Oeko-Tex Standard 100"
+    ],
+    "os_id": "BD2020021QK28YZ",
+    "geocoded_location_type": "ROOFTOP",
+    "coordinates": {
+        "lat": 24.2206888,
+        "lng": 90.41227169999999
+    },
+    "minimum_order_quantity": "25000",
+    "affiliations": [
+        "Better Work (ILO)",
+        "Ethical Trading Initiative",
+        "HERhealth",
+        "SEDEX",
+        "Social and Labor Convergence Plan (SLCP)"
+    ],
+    "description": "Facility is LEED Gold Certified Readymade Manufacturing Garments . Facility has GOTS,OCS,GRS,RCS,FSC,EUROPEAN FLAX, OEKOTEX certificates and member of BSCI, SEDEX,HIGG,SLCP,BETTERWORK & ICS. It's manufacturing process are Cutting, Embroidery, Sewing, Finishing, Packing, Export. \nMonthly Production Capacity 1.35 Million Units. Total Sewing lines 45. We are using Energy efficient motors for all Machineries. \nFacility has Rain Water Harvesting, Sewage Treatment Plant, Solar System, 30% Green Area.",
+    "local_name": "Dekko Garments Ltd.",
+    "location_type": [
+        "Final Product Assembly",
+        "Textile or Material Production",
+        "Printing, Product Dyeing and Laundering"
+    ],
+    "percent_female_workers": 60,
+    "claimed_at": "2026-04-04T06:17:21.227785Z",
+    "product_type": [
+        "All types of Woven Bottoms & Tops"
+    ],
+    "geocoded_address": "1740 Mawna - Sreepur Rd, Mawna Union, Bangladesh",
+    "historical_os_id": [
+        "BD2019086HB8VVT",
+        "BD2024197QKS136"
+    ],
+    "name": "Dekko Garments Ltd.",
+    "number_of_workers": {
+        "min": 5300,
+        "max": 5300
+    },
+    "business_url": "www.dekkoisho.com",
+    "sector": [
+        "Apparel"
+    ],
+    "processing_type": [
+        "Cut & Sew",
+        "Embroidery",
+        "Final Product Assembly",
+        "Finishing"
+    ],
+    "average_lead_time": "90-120 Days",
+    "accord_inspections_and_remediation_program": {
+        "rsc_presence": "Yes",
+        "first_inspection_date": "2019-04-08"
+    },
+    "amfori_compliance_status": {
+        "bsci_audit": {
+            "expiration_date": "2026-11-21",
+            "submission_date": "2024-11-21"
+        },
+        "environmental_risk_assessment": {
+            "completion_date": "2026-01-22"
+        },
+        "bepi_audit": {}
+    },
+    "slcp_assessment": {
+        "verifier_body": "N/A - Better Work Bangladesh (not a Verifier Body)",
+        "slcp_facility_id": "FA500170",
+        "assessment_platform": "N/A - Data shared by Better Work",
+        "most_recent_assessment_date": "2026-03-30",
+        "most_recent_assessment_status": "Assessment Initiated"
+    },
+    "wrap_certification": {
+        "issue_date": "2025-05-12",
+        "expiration_date": "2026-05-12",
+        "certification_status": "active"
+    },
+    "climate_trace_emissions": {
+        "emissions_model": "Fully Modeled",
+        "estimated_emissions": 546
+    },
+    "rsc_grievance_mechanism": {
+        "status": "Active",
+        "internal_ID": "9214",
+        "thematic_coverage": "Multi-issue",
+        "mechanism_type_ownership": "Multi-stakeholder led",
+        "access_modality": "Hotline; Email; In-person",
+        "coverage": "All workers (factory-level)"
     }
-  }
-}
 ```
 
 ### Key metadata fields in `partner_fields`
@@ -121,64 +173,118 @@ GET /api/v1/production-locations/{os_id}
 **Example:**
 
 ```
-GET /api/v1/production-locations/BD2019086FE689M
+GET /api/v1/production-locations/BD2020021QK28YZ
 ```
 
 ### Response structure
 
-The new endpoint returns a flat JSON object. Partner data appears as top-level fields, with raw values directly accessible — no unwrapping of contribution arrays is needed.
+> **Note:** This is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/).
 
-> **IMPORTANT:** The following response example illustrate what a fully populated production location may look like when data has been contributed by multiple partners. In practice, most production locations will only contain a subset of these fields, depending on whether partner data exists for that specific location. As a result, API responses will vary and should not be expected to include data from every partner for every production location.
 
 ```json
 {
-  "os_id": "BD2019086FE689M",
-  "name": "Debonair Limited",
-  "address": "Gorat, Sarker Market Road, Ashulia",
-  "coordinates": {
-    "lat": 23.9431596,
-    "lng": 90.304338
-  },
-  "country": {
-    "name": "Bangladesh",
-    "alpha_2": "BD"
-  },
-  "sector": ["Apparel"],
-  "claim_status": "claimed",
-  "wage_indicator": {
-    "living_wage_link_national": "https://mywage.org.bd/salary/living-wages",
-    "minimum_wage_link_english": "https://wageindicator.org/salary/minimum-wage/bangladesh/38276-bangladesh",
-    "minimum_wage_link_national": "https://mywage.org.bd/salary/minimum-wage/"
-  },
-  "amfori_compliance_status": {
-    "bsci_audit": {
-      "submission_date": "2024-10-15",
-      "expiration_date": "2026-10-15"
+    "country": {
+        "alpha_3": "BGD",
+        "alpha_2": "BD",
+        "name": "Bangladesh",
+        "numeric": "050"
     },
-    "bepi_audit": {
-      "submission_date": "2024-11-20",
-      "expiration_date": "2026-11-20"
+    "parent_company": "Dekkoisho Group",
+    "address": "Mawna, Sreepur, Gazipur-1740",
+    "claim_status": "claimed",
+    "certifications_standards_regulations": [
+        "BCI",
+        "FSC",
+        "GOTS",
+        "Global Recycling Standard (GRS)",
+        "Higg Index",
+        "Oeko-Tex Standard 100"
+    ],
+    "os_id": "BD2020021QK28YZ",
+    "geocoded_location_type": "ROOFTOP",
+    "coordinates": {
+        "lat": 24.2206888,
+        "lng": 90.41227169999999
     },
-    "environmental_risk_assessment": {
-      "completion_date": "2024-12-01",
-      "expiration_date": "2026-12-01"
+    "minimum_order_quantity": "25000",
+    "affiliations": [
+        "Better Work (ILO)",
+        "Ethical Trading Initiative",
+        "HERhealth",
+        "SEDEX",
+        "Social and Labor Convergence Plan (SLCP)"
+    ],
+    "description": "Facility is LEED Gold Certified Readymade Manufacturing Garments . Facility has GOTS,OCS,GRS,RCS,FSC,EUROPEAN FLAX, OEKOTEX certificates and member of BSCI, SEDEX,HIGG,SLCP,BETTERWORK & ICS. It's manufacturing process are Cutting, Embroidery, Sewing, Finishing, Packing, Export. \nMonthly Production Capacity 1.35 Million Units. Total Sewing lines 45. We are using Energy efficient motors for all Machineries. \nFacility has Rain Water Harvesting, Sewage Treatment Plant, Solar System, 30% Green Area.",
+    "local_name": "Dekko Garments Ltd.",
+    "location_type": [
+        "Final Product Assembly",
+        "Textile or Material Production",
+        "Printing, Product Dyeing and Laundering"
+    ],
+    "percent_female_workers": 60,
+    "claimed_at": "2026-04-04T06:17:21.227785Z",
+    "product_type": [
+        "All types of Woven Bottoms & Tops"
+    ],
+    "geocoded_address": "1740 Mawna - Sreepur Rd, Mawna Union, Bangladesh",
+    "historical_os_id": [
+        "BD2019086HB8VVT",
+        "BD2024197QKS136"
+    ],
+    "name": "Dekko Garments Ltd.",
+    "number_of_workers": {
+        "min": 5300,
+        "max": 5300
+    },
+    "business_url": "www.dekkoisho.com",
+    "sector": [
+        "Apparel"
+    ],
+    "processing_type": [
+        "Cut & Sew",
+        "Embroidery",
+        "Final Product Assembly",
+        "Finishing"
+    ],
+    "average_lead_time": "90-120 Days",
+    "accord_inspections_and_remediation_program": {
+        "rsc_presence": "Yes",
+        "first_inspection_date": "2019-04-08"
+    },
+    "amfori_compliance_status": {
+        "bsci_audit": {
+            "expiration_date": "2026-11-21",
+            "submission_date": "2024-11-21"
+        },
+        "environmental_risk_assessment": {
+            "completion_date": "2026-01-22"
+        },
+        "bepi_audit": {}
+    },
+    "slcp_assessment": {
+        "verifier_body": "N/A - Better Work Bangladesh (not a Verifier Body)",
+        "slcp_facility_id": "FA500170",
+        "assessment_platform": "N/A - Data shared by Better Work",
+        "most_recent_assessment_date": "2026-03-30",
+        "most_recent_assessment_status": "Assessment Initiated"
+    },
+    "wrap_certification": {
+        "issue_date": "2025-05-12",
+        "expiration_date": "2026-05-12",
+        "certification_status": "active"
+    },
+    "climate_trace_emissions": {
+        "emissions_model": "Fully Modeled",
+        "estimated_emissions": 546
+    },
+    "rsc_grievance_mechanism": {
+        "status": "Active",
+        "internal_ID": "9214",
+        "thematic_coverage": "Multi-issue",
+        "mechanism_type_ownership": "Multi-stakeholder led",
+        "access_modality": "Hotline; Email; In-person",
+        "coverage": "All workers (factory-level)"
     }
-  },
-  "estimated_emissions": 13,
-  "estimated_annual_activity": 22,
-  "worldly_assessment_data": {
-    "fem_assessment": {
-      "last_date": "2024-06-15T10:30:00Z",
-      "verification_status": "verified",
-      "reporting_year": 2024,
-      "assessment_url": "https://worldly.io/assessments/fem/fem_2024_bd2019086fe689m"
-    }
-  },
-  "ulula_grievance_mechanism": {
-    "status": "active",
-    "start_date": "2024-01-20"
-  }
-}
 ```
 ## Frequently Asked Questions
 
