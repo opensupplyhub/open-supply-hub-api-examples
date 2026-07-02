@@ -778,6 +778,8 @@ GET /api/v1/production-locations/BD2020021QK28YZ
 
 > **Note:** This is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/).
 
+<details>
+<summary>Example response for OS ID <code>BD2020021QK28YZ</code></summary>
 
 ```json
 {
@@ -884,6 +886,9 @@ GET /api/v1/production-locations/BD2020021QK28YZ
         "coverage": "All workers (factory-level)"
     }
 ```
+
+</details>
+
 ## Frequently Asked Questions
 
 **Will every production location have partner data?**
