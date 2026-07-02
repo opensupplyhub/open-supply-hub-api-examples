@@ -21,7 +21,8 @@ OS Hub provides two endpoints for retrieving a production location by OS ID:
 | **Path** | `GET /api/facilities/{id}` | `GET /api/v1/production-locations/{os_id}` |
 | **Endpoint reference** | [Legacy API Endpoints](https://opensupplyhub.org/api/docs/) | [NEW (Beta) API Endpoints](https://opensupplyhub.github.io/open-supply-hub-api-docs/) |
 | **Partner data location** | Nested under `properties.partner_fields` | Top-level fields |
-| **Partner data structure** | Array of contribution objects with metadata (contributor name, verification status, timestamps) | Clean key-value pairs with raw values only |
+| **Partner data structure** | Array of contribution objects with metadata
+(contributor name, verification status, timestamps) | Clean key-value pairs with raw values only |
 | **Best for** | Accessing contributor metadata and provenance | Straightforward data integration |
 
 ---
