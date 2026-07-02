@@ -40,9 +40,9 @@ GET /api/facilities/{id}
 GET /api/facilities/BD2020021QK28YZ
 ```
 
-### Example response structure
+### Response structure for the GET /api/facilities/{id} endpoint
 
-> **Note:** This is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.org/api/docs/).
+> **Note:** The example below is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.org/api/docs/).
 
 
 <details>
@@ -774,9 +774,9 @@ GET /api/v1/production-locations/{os_id}
 GET /api/v1/production-locations/BD2020021QK28YZ
 ```
 
-### Response structure
+### Response structure for the GET /api/v1/production-locations/{os_id} endpoint
 
-> **Note:** This is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/).
+> **Note:** The example below is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/).
 
 <details>
 <summary>Example response for OS ID <code>BD2020021QK28YZ</code></summary>
