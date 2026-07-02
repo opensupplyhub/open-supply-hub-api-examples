@@ -48,7 +48,6 @@ GET /api/facilities/BD2020021QK28YZ
 <details>
 <summary>Example response for OS ID <code>BD2020021QK28YZ</code></summary>
 
-> **Note:** This is a real production location on OS Hub, so not all fields will be populated. For the complete schema including all possible fields, see the [Endpoint reference documentation](https://opensupplyhub.github.io/open-supply-hub-api-docs/).
 
 ```json
 {
