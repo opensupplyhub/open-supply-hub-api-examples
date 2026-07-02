@@ -880,7 +880,6 @@ GET /api/v1/production-locations/BD2020021QK28YZ
     },
     "rsc_grievance_mechanism": {
         "status": "Active",
-        "internal_ID": "9214",
         "thematic_coverage": "Multi-issue",
         "mechanism_type_ownership": "Multi-stakeholder led",
         "access_modality": "Hotline; Email; In-person",
