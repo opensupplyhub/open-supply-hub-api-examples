@@ -44,6 +44,7 @@ Your API token authenticates all requests to the OS Hub API. Keep it secure and 
 1. Go to **My Account > Settings > API**
 2. Click **Generate New API Token**
 3. Copy your token and store it securely
+4. Include the token in every request header. The OS Hub server will validate credentials on the authorization header on each call.
 
 ---
 
