@@ -10,7 +10,7 @@ Remove your contributor name from facilities you no longer source from, without 
 Note: Both endpoints are on the **legacy API**. They are not available on `/api/v1/production-locations/`.
 
 > [!IMPORTANT]
-> **This is not deletion.** Facilities and their data stay on OS Hub. Your contributor name is replaced with your contributor type (for example, `Brand A` becomes `One Brand/Retailer`). This is the same anonymization OS Hub applies when a contributor is removed today.
+> **This is not deletion.** Facilities and their data stay on OS Hub. Your contributor name is replaced with your contributor type (for example, `Brand A` becomes `One Brand/Retailer`). This is the same anonymization OS Hub applies when a contributor deactivate a facility or list via their OS Hub account or emailing the OS Hub Team.
 
 ## Before you start
 
@@ -27,7 +27,7 @@ Test on staging first. Neither action can be undone through the API.
 
 ---
 
-## Dissociate a single facility
+## Deactivate a single facility
 
 ```
 POST /api/facilities/{os_id}/dissociate/
@@ -63,6 +63,12 @@ Returns the updated facility record (same format as `GET /api/facilities/{os_id}
 
 > [!NOTE]
 > If you have no active contributions to the facility, the call still returns `200` with the facility unchanged. Compare `contributors` before and after if you need to confirm a change happened.
+
+The facility is shown as "REMOVED" in the contributor's account:
+
+<img width="1379" height="433" alt="Screenshot 2026-11-03 at 15 05 17" src="https://github.com/user-attachments/assets/55164467-2dd8-4ad2-a1f3-afd2f30baf24" />
+
+<img width="1379" height="433" alt="Screenshot 2026-11-03 at 15 07 06" src="https://github.com/user-attachments/assets/6a5a395f-1123-442a-b418-07b1166fe5ae" />
 
 ---
 
