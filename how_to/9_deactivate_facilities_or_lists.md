@@ -137,9 +137,6 @@ Errors return a JSON body with a `detail` field. No changes are made when an err
 | `404` | Deactivate | `This list is already inactive.` |
 | `400` | Deactivate | `Only an approved list can be deactivated.` — list is still pending or was rejected by moderation |
 
-> [!TIP]
-> Deactivate returns `404`, not `403`, for another contributor's list. This is deliberate: it avoids revealing which list IDs exist.
-
 ---
 
 ## FAQ
