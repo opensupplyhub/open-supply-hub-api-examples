@@ -82,19 +82,28 @@ Anonymizes your contribution on **every** facility in the list in one call. The 
 
 ### Step 1 — Find the list ID
 
+```
+GET /api/contributor-lists-sorted/?contributors={contributor_id}
+```
+
+Returns your active, approved lists, newest first. Every list returned can be deactivated.
+
 ```bash
-curl "https://opensupplyhub.org/api/facility-lists/" \
+curl "https://opensupplyhub.org/api/contributor-lists-sorted/?contributors=1234" \
   -H "Authorization: Token YOUR_API_TOKEN"
 ```
 
 ```json
 [
-  { "id": 16, "name": "2026 Q1 Suppliers", "file_name": "q1.csv", "is_active": true, "is_public": true },
-  { "id": 15, "name": "2025 Q4 Suppliers", "file_name": "q4.csv", "is_active": true, "is_public": true }
+  { "id": 16, "name": "2026 Q1 Suppliers" },
+  { "id": 15, "name": "2025 Q4 Suppliers" }
 ]
 ```
 
-Only lists with `"is_active": true` can be deactivated.
+> [!NOTE]
+> Don't know your contributor ID? Find your organization's name in `GET /api/contributors/`, which returns `[id, name]` pairs.
+>
+> Responses are cached for up to 10 minutes, so a list you've just deactivated may still appear here briefly.
 
 ### Step 2 — Deactivate it
 
