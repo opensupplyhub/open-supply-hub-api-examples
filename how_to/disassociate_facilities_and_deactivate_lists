@@ -1,0 +1,146 @@
+# Dissociate Facilities and Deactivate Lists
+
+Remove your contributor name from facilities you no longer source from, without uploading a replacement list or contacting the OS Hub team.
+
+| I want to… | Endpoint | Scope |
+|---|---|---|
+| Remove myself from **one facility** | `POST /api/facilities/{os_id}/dissociate/` | All of your contributions to that facility |
+| Remove myself from **every facility in a list** | `POST /api/facility-lists/{list_id}/deactivate/` | Every facility in that list |
+
+Note: Both endpoints are on the **legacy API**. They are not available on `/api/v1/`.
+
+> [!IMPORTANT]
+> **This is not deletion.** Facilities and their data stay on OS Hub. Your contributor name is replaced with your contributor type (for example, `Brand A` becomes `One Brand/Retailer`). This is the same anonymization OS Hub applies when a contributor is removed today.
+
+## Before you start
+
+- **API token** for a registered account with a confirmed email. Send it as `Authorization: Token <your_token>`.
+- **Your own data only.** You can only dissociate or deactivate contributions made by your account.
+- **No request body.** Both endpoints take an ID in the path and nothing else.
+
+| Environment | Base URL |
+|---|---|
+| Production | `https://opensupplyhub.org` |
+| Staging | `https://staging.opensupplyhub.org` |
+
+Test on staging first. Neither action can be undone through the API.
+
+---
+
+## Dissociate a single facility
+
+```
+POST /api/facilities/{os_id}/dissociate/
+```
+
+Deactivates **all** of your matches to that facility, across every list or single-facility upload you have made. Your other facilities are unaffected.
+
+### Request
+
+```bash
+curl -X POST "https://opensupplyhub.org/api/facilities/CN2019303BQ3FX0/dissociate/" \
+  -H "Authorization: Token YOUR_API_TOKEN"
+```
+
+### Response — `200 OK`
+
+Returns the updated facility record (same format as `GET /api/facilities/{os_id}/`). Check `properties.contributors` to confirm your name now appears as your contributor type.
+
+```json
+{
+  "id": "CN2019303BQ3FX0",
+  "type": "Feature",
+  "properties": {
+    "os_id": "CN2019303BQ3FX0",
+    "name": "Example Garment Factory",
+    "contributors": [
+      { "id": 2, "name": "One Brand/Retailer", "is_verified": false },
+      { "id": 3, "name": "An MSI", "is_verified": false }
+    ]
+  }
+}
+```
+
+> [!NOTE]
+> If you have no active contributions to the facility, the call still returns `200` with the facility unchanged. Compare `contributors` before and after if you need to confirm a change happened.
+
+---
+
+## Deactivate a list
+
+```
+POST /api/facility-lists/{list_id}/deactivate/
+```
+
+Anonymizes your contribution on **every** facility in the list in one call. The list status changes to `REJECTED` with the reason *"Deactivated by the contributor."*
+
+### Step 1 — Find the list ID
+
+```bash
+curl "https://opensupplyhub.org/api/facility-lists/" \
+  -H "Authorization: Token YOUR_API_TOKEN"
+```
+
+```json
+[
+  { "id": 16, "name": "2026 Q1 Suppliers", "file_name": "q1.csv", "is_active": true, "is_public": true },
+  { "id": 15, "name": "2025 Q4 Suppliers", "file_name": "q4.csv", "is_active": true, "is_public": true }
+]
+```
+
+Only lists with `"is_active": true` can be deactivated.
+
+### Step 2 — Deactivate it
+
+```bash
+curl -X POST "https://opensupplyhub.org/api/facility-lists/15/deactivate/" \
+  -H "Authorization: Token YOUR_API_TOKEN"
+```
+
+### Response — `200 OK`
+
+```json
+{
+  "list_id": 15,
+  "deactivated": true
+}
+```
+
+---
+
+## Errors
+
+Errors return a JSON body with a `detail` field. No changes are made when an error is returned.
+
+| Status | Endpoint | Cause |
+|---|---|---|
+| `401` / `403` | Both | Missing or invalid token, or account email not confirmed |
+| `404` | Dissociate | OS ID does not exist |
+| `404` | Deactivate | `The list with the given id was not found.` — list doesn't exist **or belongs to another contributor** |
+| `404` | Deactivate | `This list is already inactive.` |
+| `400` | Deactivate | `Only an approved list can be deactivated.` — list is still pending or was rejected by moderation |
+
+> [!TIP]
+> Deactivate returns `404`, not `403`, for another contributor's list. This is deliberate: it avoids revealing which list IDs exist.
+
+---
+
+## FAQ
+
+**Are the facilities deleted?**
+No. Facilities, their OS IDs, and other contributors' data stay on the platform. Only the link to your name is hidden.
+
+**What do other users see afterwards?**
+Your contributor type instead of your name, for example `One Brand/Retailer`. This applies to the facility profile, API responses, and downloads.
+
+**Can I undo a deactivation or dissociation?**
+Not through the API. To reappear on a facility, upload it again (as a list or via `POST /api/facilities/`).
+
+**I deactivated a list, but my name still shows on one of its facilities. Why?**
+You also contributed that facility through another active list or upload. Use the dissociate endpoint to remove it everywhere.
+
+**Should I dissociate facility by facility or deactivate the list?**
+If a whole upload is out of date, deactivate the list: it's a single call. Use dissociate to remove individual suppliers while keeping the rest of the list active.
+
+**Is this available on the v1 API?**
+Not yet. Use the legacy endpoints above.
