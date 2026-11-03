@@ -1,6 +1,6 @@
 # Deactivate Facilities or Lists
 
-Remove your contributor name from facilities you no longer source from, without uploading a replacement list or contacting the OS Hub team.
+Remove (anonymize) your contributor name from facilities you no longer source from, without uploading a replacement list or contacting the OS Hub team.
 
 | I want to… | Endpoint | Scope |
 |---|---|---|
