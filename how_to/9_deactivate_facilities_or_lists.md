@@ -78,7 +78,9 @@ Returns the updated facility record (same format as `GET /api/facilities/{os_id}
 POST /api/facility-lists/{list_id}/deactivate/
 ```
 
-Anonymizes your contribution on **every** facility in the list in one call. The list status changes to `Feedback Phase` with the reason *"Deactivated by the contributor."*
+Anonymizes your contribution on **every** facility in the list in one call. In the contributor account, the list status changes to `Feedback Phase` with the reason *"Deactivated by the contributor."*
+<img width="1506" height="801" alt="Screenshot 2026-11-03 at 17 15 15" src="https://github.com/user-attachments/assets/bb2f4c62-6e3c-4730-beaa-dfc8cbdb9520" />
+
 
 ### Step 1 — Find the list ID
 
