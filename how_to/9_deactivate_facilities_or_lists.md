@@ -1,13 +1,13 @@
-# Dissociate Facilities and Deactivate Lists
+# Deactivate Facilities or Lists
 
 Remove your contributor name from facilities you no longer source from, without uploading a replacement list or contacting the OS Hub team.
 
 | I want to… | Endpoint | Scope |
 |---|---|---|
-| Remove myself from **one facility** | `POST /api/facilities/{os_id}/dissociate/` | All of your contributions to that facility |
-| Remove myself from **every facility in a list** | `POST /api/facility-lists/{list_id}/deactivate/` | Every facility in that list |
+| Deactivate **one facility** | `POST /api/facilities/{os_id}/dissociate/` | All of your contributions to that facility |
+| Deactivate **all facilities in a list** | `POST /api/facility-lists/{list_id}/deactivate/` | Every facility in that list |
 
-Note: Both endpoints are on the **legacy API**. They are not available on `/api/v1/`.
+Note: Both endpoints are on the **legacy API**. They are not available on `/api/v1/production-locations/`.
 
 > [!IMPORTANT]
 > **This is not deletion.** Facilities and their data stay on OS Hub. Your contributor name is replaced with your contributor type (for example, `Brand A` becomes `One Brand/Retailer`). This is the same anonymization OS Hub applies when a contributor is removed today.
