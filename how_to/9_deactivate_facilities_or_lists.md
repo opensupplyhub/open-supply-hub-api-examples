@@ -64,7 +64,7 @@ Returns the updated facility record (same format as `GET /api/facilities/{os_id}
 > [!NOTE]
 > If you have no active contributions to the facility, the call still returns `200` with the facility unchanged. Compare `contributors` before and after if you need to confirm a change happened.
 
-## The facility is displayed as "REMOVED" in the contributor's account:
+### The facility is displayed as "REMOVED" in the contributor's account:
 
 <img width="1379" height="433" alt="Screenshot 2026-11-03 at 15 05 17" src="https://github.com/user-attachments/assets/55164467-2dd8-4ad2-a1f3-afd2f30baf24" />
 
