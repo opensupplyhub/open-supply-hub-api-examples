@@ -50,12 +50,12 @@ Returns a facility with all data that has been contributed about that facility; 
 | `q` | string | Search term for facility name or OS ID |
 | `countries` | string | Two-character country code (e.g., `BD`, `US`)|
 | `contributors` | integer | **Filter by contributor ID.** This is unique to the Facilities endpoint - Production Locations does not support contributor filtering. Get the full list of IDs from the [/contributors/ endpoint](https://github.com/opensupplyhub/open-supply-hub-api-examples/blob/main/how_to/contributor-search-guide.md)|
-| `product_type` | string | Filter by [product type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0)|
-| `sector` | string | Filter by [sector](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0)|
+| `product_type` | string | Filter by product type|
+| `sector` | string | Filter by [sector]((https://opensupplyhub.atlassian.net/wiki/external/OWUzOGNkNTZjYWQxNDJkYzkyYzg4MTZhMjI5MGJhNTk))|
 | `contributor_types` | string | **Filter by contributor type** (e.g., Brand, Multi-Stakeholder Initiative). Unique to Facilities endpoint. Get types from the GET /contributor-types/ endpoint|
 | `parent_company` | string | Filter by parent company name or contributor ID. Get companies from the GET /parent-companies/ endpoint|
-| `facility_type` | string | Filter by [facility type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) (e.g., "Final Product Assembly")|
-| `processing_type` | string | Filter by [processing type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) (e.g., "Assembly", "Cutting") |
+| `facility_type` | string | Filter by [facility type](https://opensupplyhub.atlassian.net/wiki/external/NTUyM2MzNDZmODI1NGYwM2ExYWE5MTExZDI4YjY4Yjc) (e.g., "Final Product Assembly")|
+| `processing_type` | string | Filter by [processing type](https://opensupplyhub.atlassian.net/wiki/external/NTUyM2MzNDZmODI1NGYwM2ExYWE5MTExZDI4YjY4Yjc) (e.g., "Assembly", "Cutting") |
 
 ---
 
