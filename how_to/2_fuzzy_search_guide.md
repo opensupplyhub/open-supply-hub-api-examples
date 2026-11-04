@@ -86,9 +86,9 @@ GET /api/v1/production-locations/?coordinates[lat]=13.0454318&coordinates[lng]=7
 | Parameter | Description | Example |
 |-----------|-------------|---------|
 | `country` | Two-letter country code | `?country=US` |
-| `sector` | [Industry sector](https://docs.google.com/document/d/12gDb4WlMHwaAE0iYVmbOjNJ_T7ICqntp-Ddd1qfbhCg/edit?tab=t.0#heading=h.tnf5hn3volep) | `?sector=Apparel` |
-| `product_type` | [Product type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) | `?product_type=shirts` |
-| `processing_type` | [Processing type](https://docs.google.com/spreadsheets/d/18ABJuS5CY4cr9JaTzPeLaAr1uhdu7VJXK6JpibP1b1o/edit?gid=0#gid=0) | `?processing_type=dyeing` |
+| `sector` | [Industry sector](https://opensupplyhub.atlassian.net/wiki/external/OWUzOGNkNTZjYWQxNDJkYzkyYzg4MTZhMjI5MGJhNTk) | `?sector=Apparel` |
+| `product_type` | [Product type] | `?product_type=shirts` |
+| `processing_type` | [Processing type](https://opensupplyhub.atlassian.net/wiki/external/NTUyM2MzNDZmODI1NGYwM2ExYWE5MTExZDI4YjY4Yjc) | `?processing_type=dyeing` |
 | `os_id` | Exact OS ID match | `?os_id=US2025026H5N0X1` |
 
 ### Geographic Search
